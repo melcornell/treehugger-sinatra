@@ -6,5 +6,11 @@ class ApplicationController < Sinatra::Base
   get '/' do
     erb :index
   end
+  
+  post '/profile' do
+    
+    
+    erb :profile
+  end
 
 end
