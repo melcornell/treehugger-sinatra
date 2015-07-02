@@ -1,5 +1,6 @@
 require 'bundler'
 Bundler.require
+require_relative 'models/model.rb'
 
 class ApplicationController < Sinatra::Base
 
@@ -8,22 +9,21 @@ class ApplicationController < Sinatra::Base
   end
   
   post '/profile' do
-    zipcode=params[:zipcode]
-    trees_with_zip_match=[]
-    trees.each |treenum,treeinfo| do
-      trees_with_zip_match.push({:treenum, treeinfo}) if treeinfo[:zip]=zipcode
+    trees = Tree_Hash.new.trees
+  
+    zipcode=params[:zip]
+    trees_with_zip_match=trees
+
+     @zip=trees_with_zip_match[:tree1][:zip]
+     @species=trees_with_zip_match[:tree1][:species]
+     @nickname=trees_with_zip_match[:tree1][:nickname]
+     @street=trees_with_zip_match[:tree1][:street]
+     @diameter=trees_with_zip_match[:tree1][:diameter]
+  
+        erb :profile
+
     end
     
-    @zip=trees_with_zip_match[:zip]
-    @species=trees_with_zip_match[:species]
-    @nickname=trees_with_zip_match[:nickname]
-    @street=trees_with_zip_match[:street]
-    @diameter=trees_with_zip_match[:diameter]
-    
-    end
-    
-    erb :profile
-  end
 
   get '/profile' do
     erb :profile
