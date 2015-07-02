@@ -10,8 +10,8 @@ class ApplicationController < Sinatra::Base
   post '/profile' do
     zipcode=params[:zipcode]
     trees_with_zip_match=[]
-    trees.each |treenum,treeinfo| do
-      trees_with_zip_match.push({:treenum, treeinfo}) if treeinfo[:zip]=zipcode
+    trees.each do|treenum,treeinfo| 
+      trees_with_zip_match.push({:treenum=> treeinfo}) if treeinfo[:zip]=zipcode
     end
     
     @zip=trees_with_zip_match[:zip]
@@ -20,13 +20,6 @@ class ApplicationController < Sinatra::Base
     @street=trees_with_zip_match[:street]
     @diameter=trees_with_zip_match[:diameter]
     
+    erb :profile
     end
     
-    erb :profile
-  end
-
-  get '/profile' do
-    erb :profile
-  end
-  
-end
