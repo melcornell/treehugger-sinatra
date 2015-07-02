@@ -11,6 +11,3 @@ group :production do
 
 end
 
-# config/database.yml
-production:
-  url: <%= ENV["DATABASE_URL"] %>

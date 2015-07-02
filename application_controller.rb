@@ -7,4 +7,8 @@ class ApplicationController < Sinatra::Base
     erb :index
   end
 
+  get '/profile' do
+    erb :profile
+  end
+  
 end

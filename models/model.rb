@@ -7,23 +7,35 @@ trees = {
             :street => "West 25 Street",
             :diameter => 13}
   :tree2 => {:zip = > 10002,
-            :species => "Sycamore",
-            :diameter => 10}
+            :species => "",
+            :nickname => "",
+            :street => "East Houson Street",
+            :diameter => 8}
   :tree3 => {:zip = > 10003,
-            :species => "Sycamore",
-            :diameter => 10}
+            :species => "",
+            :nickname => "",
+            :street => "4 Avenue",
+            :diameter => 13}
   :tree4 => {:zip = > 10004,
-            :species => "Sycamore",
-            :diameter => 10}
+            :species => "",
+            :nickname => "",
+            :street => "Washington Street",
+            :diameter => 4}
   :tree5 => {:zip = > 10005,
-            :species => "Sycamore",
-            :diameter => 10}
+            :species => "",
+            :nickname => "",
+            :street => "Pine Street",
+            :diameter => 7}
   :tree6 => {:zip = > 10006,
-            :species => "Sycamore",
-            :diameter => 10}
+            :species => "",
+            :nickname => "",
+            :street => "Trinity Place",
+            :diameter => 6}
   :tree7 => {:zip = > 10007,
-            :species => "Sycamore",
-            :diameter => 10}
+            :species => "",
+            :nickname => "",
+            :street => "West Street",
+            :diameter => 4 }
   :tree8 => {:zip = > 10009,
             :species => "Sycamore",
             :diameter => 10}
@@ -43,7 +55,7 @@ trees = {
             :species => "Sycamore",
             :diameter => 10}
   :tree14 => {:zip = > 10016,
-            :species => "Sycamore",
+    :species => "Sycamore",
             :diameter => 10}
   :tree15 => {:zip = > 10017,
             :species => "Sycamore",
