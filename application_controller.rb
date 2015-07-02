@@ -14,6 +14,11 @@ class ApplicationController < Sinatra::Base
       trees_with_zip_match.push({:treenum, treeinfo}) if treeinfo[:zip]=zipcode
     end
     
+    @zip=trees_with_zip_match[:zip]
+    @species=trees_with_zip_match[:species]
+    @nickname=trees_with_zip_match[:nickname]
+    @street=trees_with_zip_match[:street]
+    @diameter=trees_with_zip_match[:diameter]
     
     end
     
