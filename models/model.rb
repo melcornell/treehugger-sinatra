@@ -2,9 +2,10 @@
 
 trees = {
   :tree1 => {:zip = > 10001,
-            :species => "Sycamore",
-            :diameter => 10}
- 
+            :species => "Pear Callery",
+            :nickname => "Pyrus Calleryana",
+            :street => "West 25 Street",
+            :diameter => 13}
   :tree2 => {:zip = > 10002,
             :species => "Sycamore",
             :diameter => 10}
