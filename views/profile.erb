@@ -1,17 +1,25 @@
 <!DOCTYPE html>
 <html>
- <head>
-  <meta charset="UTF-8">
-  <title>Your tree's profile</title>
- </head>
- <body>
-   
-   <h3> <%=@species%> </h3 >
-   <h3> <%=@nickname%> </h3 >
-   <h3> <%=@street%> </h3 >
-   <h3> <%=@diameter%> </h3 >
-   <h3> <%=@zip%> </h3 >
-   
+<head>
+<title>Your tree</title>
+ <link rel="stylesheet" href="css/style.css">
  
- </body>
+  </head>
+  
+<body>
+    <div id="wrapper">
+        <div id="leftcolumn">
+            <p>..........</p>
+        </div>
+        <div id="content">
+           <p>    
+    <h3> Name: <%=@nickname%> </h3 >
+    <h3> Nickname: <%=@species%> </h3 >
+    <h3>  Location: <%=@street%>/<%=@zip%> </h3 >
+    <h3> Body-type: <%=@diameter%> in. </h3 > </p>
+       </div>
+    </div>
+</body>
 </html>
+
+
